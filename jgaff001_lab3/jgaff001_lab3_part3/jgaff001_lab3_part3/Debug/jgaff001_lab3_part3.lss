@@ -1,0 +1,269 @@
+
+jgaff001_lab3_part3.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  00000168  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000114  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000168  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000198  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000030  00000000  00000000  000001d8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000008c1  00000000  00000000  00000208  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000007c8  00000000  00000000  00000ac9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000002f2  00000000  00000000  00001291  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000044  00000000  00000000  00001584  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000041d  00000000  00000000  000015c8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000000d3  00000000  00000000  000019e5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000020  00000000  00000000  00001ab8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	4b c0       	rjmp	.+150    	; 0x9c <__bad_interrupt>
+   6:	00 00       	nop
+   8:	49 c0       	rjmp	.+146    	; 0x9c <__bad_interrupt>
+   a:	00 00       	nop
+   c:	47 c0       	rjmp	.+142    	; 0x9c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	45 c0       	rjmp	.+138    	; 0x9c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	43 c0       	rjmp	.+134    	; 0x9c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	41 c0       	rjmp	.+130    	; 0x9c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	3f c0       	rjmp	.+126    	; 0x9c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	3d c0       	rjmp	.+122    	; 0x9c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	3b c0       	rjmp	.+118    	; 0x9c <__bad_interrupt>
+  26:	00 00       	nop
+  28:	39 c0       	rjmp	.+114    	; 0x9c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	37 c0       	rjmp	.+110    	; 0x9c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	35 c0       	rjmp	.+106    	; 0x9c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	33 c0       	rjmp	.+102    	; 0x9c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	31 c0       	rjmp	.+98     	; 0x9c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	2f c0       	rjmp	.+94     	; 0x9c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	2d c0       	rjmp	.+90     	; 0x9c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	2b c0       	rjmp	.+86     	; 0x9c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	29 c0       	rjmp	.+82     	; 0x9c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	27 c0       	rjmp	.+78     	; 0x9c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	25 c0       	rjmp	.+74     	; 0x9c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	23 c0       	rjmp	.+70     	; 0x9c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	21 c0       	rjmp	.+66     	; 0x9c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	1f c0       	rjmp	.+62     	; 0x9c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	1d c0       	rjmp	.+58     	; 0x9c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	1b c0       	rjmp	.+54     	; 0x9c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	19 c0       	rjmp	.+50     	; 0x9c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	17 c0       	rjmp	.+46     	; 0x9c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	15 c0       	rjmp	.+42     	; 0x9c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	13 c0       	rjmp	.+38     	; 0x9c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	11 c0       	rjmp	.+34     	; 0x9c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	0f c0       	rjmp	.+30     	; 0x9c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	0d c0       	rjmp	.+26     	; 0x9c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	0b c0       	rjmp	.+22     	; 0x9c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	09 c0       	rjmp	.+18     	; 0x9c <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e4       	ldi	r29, 0x40	; 64
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+  98:	02 d0       	rcall	.+4      	; 0x9e <main>
+  9a:	3a c0       	rjmp	.+116    	; 0x110 <_exit>
+
+0000009c <__bad_interrupt>:
+  9c:	b1 cf       	rjmp	.-158    	; 0x0 <__vectors>
+
+0000009e <main>:
+	return ((x & (0x01 << k)) != 0);
+}
+
+int main(void)
+{
+	DDRA = 0x00; PORTA = 0xFF; //inputs
+  9e:	11 b8       	out	0x01, r1	; 1
+  a0:	8f ef       	ldi	r24, 0xFF	; 255
+  a2:	82 b9       	out	0x02, r24	; 2
+	DDRC = 0xFF; PORTC = 0x00; //outputs
+  a4:	87 b9       	out	0x07, r24	; 7
+  a6:	18 b8       	out	0x08, r1	; 8
+		}
+		else if (temp >= 10 && temp <= 12) {
+			temp2 = 0x3E;
+		}
+		else if (temp >= 13 && temp <= 15) {
+			PORTC = 0x3F;
+  a8:	3f e3       	ldi	r19, 0x3F	; 63
+	unsigned char temp = 0x00;
+	unsigned char temp2 = 0x00;
+	unsigned char check = 0x00; //check if seatbelt not on, while key is in ignition and driver is seated.
+
+	while(1) {
+		temp = PINA & 0x0F;
+  aa:	80 b1       	in	r24, 0x00	; 0
+  ac:	8f 70       	andi	r24, 0x0F	; 15
+		temp2 = 0x00;
+		check = PINA & 0X70;
+  ae:	90 b1       	in	r25, 0x00	; 0
+  b0:	90 77       	andi	r25, 0x70	; 112
+		
+		if (temp == 1 || temp == 2) {
+  b2:	2f ef       	ldi	r18, 0xFF	; 255
+  b4:	28 0f       	add	r18, r24
+  b6:	22 30       	cpi	r18, 0x02	; 2
+  b8:	d0 f0       	brcs	.+52     	; 0xee <main+0x50>
+			temp2 = 0x20;
+		}
+		else if (temp == 3 || temp == 4) {
+  ba:	2d ef       	ldi	r18, 0xFD	; 253
+  bc:	28 0f       	add	r18, r24
+  be:	22 30       	cpi	r18, 0x02	; 2
+  c0:	c0 f0       	brcs	.+48     	; 0xf2 <main+0x54>
+			temp2 = 0x30;
+		}
+		else if (temp == 5 || temp == 6) {
+  c2:	2b ef       	ldi	r18, 0xFB	; 251
+  c4:	28 0f       	add	r18, r24
+  c6:	22 30       	cpi	r18, 0x02	; 2
+  c8:	b0 f0       	brcs	.+44     	; 0xf6 <main+0x58>
+			temp2 = 0x38;
+		}
+		else if (temp >=  7 && temp <= 9) {
+  ca:	29 ef       	ldi	r18, 0xF9	; 249
+  cc:	28 0f       	add	r18, r24
+  ce:	23 30       	cpi	r18, 0x03	; 3
+  d0:	a0 f0       	brcs	.+40     	; 0xfa <main+0x5c>
+			temp2 = 0x1C;
+		}
+		else if (temp >= 10 && temp <= 12) {
+  d2:	26 ef       	ldi	r18, 0xF6	; 246
+  d4:	28 0f       	add	r18, r24
+  d6:	23 30       	cpi	r18, 0x03	; 3
+  d8:	90 f0       	brcs	.+36     	; 0xfe <main+0x60>
+			temp2 = 0x3E;
+		}
+		else if (temp >= 13 && temp <= 15) {
+  da:	23 ef       	ldi	r18, 0xF3	; 243
+  dc:	28 0f       	add	r18, r24
+  de:	23 30       	cpi	r18, 0x03	; 3
+  e0:	18 f4       	brcc	.+6      	; 0xe8 <main+0x4a>
+			PORTC = 0x3F;
+  e2:	38 b9       	out	0x08, r19	; 8
+	unsigned char temp2 = 0x00;
+	unsigned char check = 0x00; //check if seatbelt not on, while key is in ignition and driver is seated.
+
+	while(1) {
+		temp = PINA & 0x0F;
+		temp2 = 0x00;
+  e4:	20 e0       	ldi	r18, 0x00	; 0
+  e6:	0c c0       	rjmp	.+24     	; 0x100 <main+0x62>
+		}
+		else if (temp >= 13 && temp <= 15) {
+			PORTC = 0x3F;
+		}
+		else {
+			PORTC = 0x00;
+  e8:	18 b8       	out	0x08, r1	; 8
+	unsigned char temp2 = 0x00;
+	unsigned char check = 0x00; //check if seatbelt not on, while key is in ignition and driver is seated.
+
+	while(1) {
+		temp = PINA & 0x0F;
+		temp2 = 0x00;
+  ea:	20 e0       	ldi	r18, 0x00	; 0
+  ec:	09 c0       	rjmp	.+18     	; 0x100 <main+0x62>
+		check = PINA & 0X70;
+		
+		if (temp == 1 || temp == 2) {
+			temp2 = 0x20;
+  ee:	20 e2       	ldi	r18, 0x20	; 32
+  f0:	07 c0       	rjmp	.+14     	; 0x100 <main+0x62>
+		}
+		else if (temp == 3 || temp == 4) {
+			temp2 = 0x30;
+  f2:	20 e3       	ldi	r18, 0x30	; 48
+  f4:	05 c0       	rjmp	.+10     	; 0x100 <main+0x62>
+		}
+		else if (temp == 5 || temp == 6) {
+			temp2 = 0x38;
+  f6:	28 e3       	ldi	r18, 0x38	; 56
+  f8:	03 c0       	rjmp	.+6      	; 0x100 <main+0x62>
+		}
+		else if (temp >=  7 && temp <= 9) {
+			temp2 = 0x1C;
+  fa:	2c e1       	ldi	r18, 0x1C	; 28
+  fc:	01 c0       	rjmp	.+2      	; 0x100 <main+0x62>
+		}
+		else if (temp >= 10 && temp <= 12) {
+			temp2 = 0x3E;
+  fe:	2e e3       	ldi	r18, 0x3E	; 62
+			PORTC = 0x3F;
+		}
+		else {
+			PORTC = 0x00;
+		}
+		if(temp <= 4) {
+ 100:	85 30       	cpi	r24, 0x05	; 5
+ 102:	08 f4       	brcc	.+2      	; 0x106 <main+0x68>
+			temp2 = temp2 | 0x40;
+ 104:	20 64       	ori	r18, 0x40	; 64
+		}
+		check = check >> 4;
+		if (check == 3) {
+ 106:	90 33       	cpi	r25, 0x30	; 48
+ 108:	09 f4       	brne	.+2      	; 0x10c <main+0x6e>
+			temp2 = temp2 | 0x80;
+ 10a:	20 68       	ori	r18, 0x80	; 128
+		}
+		
+		PORTC = temp2;
+ 10c:	28 b9       	out	0x08, r18	; 8
+	}
+ 10e:	cd cf       	rjmp	.-102    	; 0xaa <main+0xc>
+
+00000110 <_exit>:
+ 110:	f8 94       	cli
+
+00000112 <__stop_program>:
+ 112:	ff cf       	rjmp	.-2      	; 0x112 <__stop_program>
